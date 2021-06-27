@@ -1,0 +1,23 @@
+﻿.carousel-control-prev {
+    left: -90px;
+    border-bottom: 0;
+    font-size: 30px;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.carousel-control-next {
+    right: -90px;
+    border-bottom: 0;
+    font-size: 30px;
+    color: black;
+    transition: 0.2s ease;
+}
+
+    .carousel-control-next:hover {
+        color: #3c77ec !important;
+    }
+
+.carousel-control-prev:hover {
+    color: #3c77ec !important;
+}

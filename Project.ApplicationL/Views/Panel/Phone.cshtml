@@ -1,0 +1,52 @@
+﻿@using Project.EnitityL.Entities
+@model List<Phone>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/PanelLayout.cshtml";
+}
+
+<div class="container ">
+    <h1 style="padding:10px; font-family:bold; font-weight:700; text-align:center">Ürün Bilgileri</h1>
+    <a style="margin-bottom:15px; float:left" href="/Panel/AddProductPhone/" class="btn btn-primary">Ürün Ekle</a>
+    <br />
+    <table class="table table-bordered bg-light">
+        <tr>
+            <th>Model</th>
+            <th>Keywords</th>
+            <th>Adet</th>
+            <th>Resim</th>
+            <th>Ücret</th>
+            <th>Seç</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+
+
+
+        </tr>
+
+        @foreach (var phone in Model)
+        {
+            <tr>
+
+                <td style="width:30%">@phone.PhoneModal </td>
+                <td style="width:20%">@phone.Keywords</td>
+
+                <td style="width:15%">@phone.Total</td>
+
+                <td style="width:15%"><img style="height:100px;width:70px;" src="@phone.ImageUrl" alt="Alternate Text" /></td>
+
+                <td style="width:15%">@phone.Price</td>
+
+
+
+                <td style="width:20%"><a class="btn btn-dark" href="/Panel/GetPhotosPhone/@phone.Id">Getir</a></td>
+                <td>@Html.ActionLink("Sil", "DeletePhone", new { id = phone.Id }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek İstiyor musunuz?')" })</td>
+                <td style="width:20%"><a class="btn btn-success" href="/Panel/UpdatePhone/@phone.Id">Güncelle</a></td>
+
+
+            </tr>
+        }
+
+    </table>
+</div>
+
