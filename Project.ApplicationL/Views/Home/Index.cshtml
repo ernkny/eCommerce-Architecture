@@ -1,0 +1,27 @@
+﻿@using Project.EnitityL.Entities
+@model List<Phone> 
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/PagesLayout.cshtml";
+}
+
+<div class="row mt-3">
+
+    @foreach (var item in Model)
+    {
+
+
+        <div class="col-3 border-1">
+            <div class="card shadow p-2 mb-5 bg-white rounded" style="width: 18rem;">
+                <a href="PhoneDetail/@item.Id"> <img src="@item.ImageUrl" class="card-img-top" alt="@item.Keywords"></a>
+                <div class="card-body">
+                    <h4 class="card-title text-center">@item.PhoneModal</h4>
+                    <p class="card-text">@Html.Raw(item.PhoneParticular.Substring(0,70))</p>
+                    <p class="card-text">@item.Price</p>
+                    <a href="PhoneDetail/@item.Id" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

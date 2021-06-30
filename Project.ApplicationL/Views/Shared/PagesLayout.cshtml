@@ -1,0 +1,65 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/Style/css/MainPages/Style.css">
+    <link rel="stylesheet" href="~/Style/css/style.css" />
+   
+    <title>Anasayfa</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container ">
+            <div class="row mx-2 "> Contact Number</div>
+            <div class="row mt-2 linkmenu shadow  mb-5 bg-white rounded">
+
+                <div class="col-1 pt-2 p-1 px-3 text-center logo"><img src="~/img/logo.png"></div>
+                <div class="col-5 p-1 pt-2 links ">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Telefon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-4  p-1 pt-3 links ">
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="row">
+                            <div class="col-6"> <input class="form-control " type="search" placeholder="Search" aria-label="Search"></div>
+                            <div class="col-6 "><button class="btn btn-outline-dark  my-sm-0 searchbtn" type="submit">Search</button></div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-1 p-1 pt-2 my-2">
+                <button><i class="fas fa-shopping-basket"></i></button>
+                <a href="#"><button><i class="fas fa-user"></i></button></a>
+            </div>
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+</body>
+
+</html>

@@ -13,27 +13,27 @@
 
         <div class="form-group row " style=" margin-top:15px;">
             <label style=" margin-top:15px;" class="text-left font-weight-bold">Telefon Model</label>
-            <input type="text" class="form-control" name="PhoneModal" value="@item.PhoneModal"/>
+            <input type="text" class="form-control" name="PhoneModal" value="@item.PhoneModal" />
 
         </div>
         <div class="form-group row ">
             <label class="text-left font-weight-bold">Keywords</label>
-            <input type="text" class="form-control" name="Keywords" value="@item.Keywords"/>
+            <input type="text" class="form-control" name="Keywords" value="@item.Keywords" />
 
         </div>
         <div class="form-group row ">
             <label class="text-left font-weight-bold">Toplam Adet</label>
-            <input type="number" class="form-control" name="Total" value="@item.Total"/>
+            <input type="number" class="form-control" name="Total" value="@item.Total" />
 
         </div>
         <div class="form-group row ">
             <label class="text-left font-weight-bold">Fiyat</label>
-            <input type="number" class="form-control" name="Price" value="@item.Price"/>
+            <input type="number" class="form-control" name="Price" value="@item.Price" />
 
         </div>
         <div class="form-group row ">
             <label class="text-left font-weight-bold">Eklenme Tarihi</label>
-            <input type="date" class="form-control" name="Tarih" value="@item.Tarih"/>
+            <input type="date" class="form-control" name="Tarih" value="@item.Tarih" />
 
         </div>
 
@@ -48,7 +48,7 @@
         </div>
         <div class="form-group row ">
             <label class="text-left font-weight-bold">Özellikler</label>
-            @Html.TextAreaFor(p=>item.PhoneParticular,new { @class = "form-control", @id = "ckEditor", })
+            @Html.TextAreaFor(p => item.PhoneParticular, new { @class = "form-control", @id = "ckEditor", })
 
         </div>
         <div style="margin-top:15px;" class="container">
