@@ -17,6 +17,7 @@ namespace Project.DataAccessL.Concrete.EntityFramework
         }
         public DbSet<Phone> Phones { get; set; }
         public DbSet<PhoneImage> PhoneImages { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }

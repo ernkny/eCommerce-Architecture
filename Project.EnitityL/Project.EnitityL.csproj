@@ -77,6 +77,7 @@
     <Compile Include="DTOs\PhoneImgesDTO.cs" />
     <Compile Include="Entities\Phone.cs" />
     <Compile Include="Entities\PhoneImage.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

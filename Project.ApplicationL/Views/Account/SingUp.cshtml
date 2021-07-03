@@ -1,0 +1,44 @@
+﻿@using Project.EnitityL.Entities
+@model List<User>
+@{
+    ViewBag.Title = "SingUp";
+    Layout = "~/Views/Shared/PagesLayout.cshtml";
+}
+
+<form method="post" enctype="multipart/form-data"style="border:1px solid #ccc">
+    <div class="container border shadow">
+        <h1 class="text-center">Kayıt Ol</h1>
+        <p>Lütfen bütün bilgileri düzgün bir biçimde doldurunuz.</p>
+        <h3 class="text-danger">* @ViewBag.Message</h3>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Şifre</b></label>
+        <input type="password" placeholder="Enter Password" name="UserPasswordHash" required>
+
+        <label for="psw-repeat"><b>Şifre Onay</b></label>
+        <input type="password" placeholder="Repeat Password" name="pswrepeat" required>
+
+        <label for="UserName"><b>Kullanııcı Adı</b></label>
+        <input type="text" placeholder="Enter User Name" name="UserName" required>
+
+        <label for="Name"><b>Tam İsminiz</b></label>
+        <input type="text" placeholder="Enter Full Name" name="FullName" required>
+
+        <label for="tel"><b>Telefon Numaranız</b></label>
+        <input type="number" placeholder="Enter Phone Number" name="PhoneNumber" required maxlength="11">
+
+
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+
+            <button class="signupbtn allbtn">Sign Up</button>
+        </div>
+       
+    </div> 
+</form>
+
